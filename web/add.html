@@ -1,0 +1,27 @@
+<!-- Addition of two numbers sby taking input of two numbers-->
+<!DOCTYPE html>
+<html>
+<head></head>
+<script>
+function multiply(a, b){
+	var c = parseInt(a)+parseInt(b); 
+	document.write(c);
+}
+</script>
+<body>
+<form>
+Enter first Number:
+<input type="text" name="val1" value=""><br>
+Enter Second Number:
+<input type="text" name="val2" value=""><br>
+<button onclick="multiply(val1.value, val2.value)" >ADD</button>
+</form>
+</body>
+</html>
+
+<!-- For Addition when the input values are taken
+are obtained from the textbox they will be considerd
+ as charecter, therefore, + and - are intrepreted in 
+ the form of string. To convert into integer, this 
+ has to be converted into integer, by using parseInt.
+ Similarly, pa

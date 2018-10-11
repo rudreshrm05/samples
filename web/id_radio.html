@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head><title>identify radio button</title></head>
+	
+	<body>
+		<form action="" id="semisterInfo">
+			<label><input type="radio" name="sem" value="5th sem">5th sem</label>
+			<label><input type="radio" name="sem" value="6th sem">6th sem</label>
+			<label><input type="radio" name="sem" value="7th sem">7th sem</label>
+			<label><input type="radio" name="sem" value="8th sem">8th sem</label>
+		</form>
+		<script>
+			var dom=document.getElementById("semisterInfo")
+			
+			for(var i=0; i<dom.sem.length, i++)
+			{
+				if(dom.sem[i].checked)
+				{
+					result=dom.sem[i].value;
+				}
+			}
+			document.write(result);
+		</script>
+	</body>
+</html>

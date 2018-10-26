@@ -1,0 +1,20 @@
+<!--JS to validate a form consisting of user name also navigate to another
+web page after validation-->
+<!DOCTYPE html>
+<html>
+	<head><title>php demo</title></head>
+	<script type="text/javascript">
+		function my_fun(s)
+			{
+				if(s==null)
+				{
+					alert("enter data");
+				}
+			}
+	</script>
+	<body>
+		<form>
+			<input type="text" name="tbx" id="tb">
+			<input type="Button" value="click" onclick="my_fun(tbx.value)">
+	</body>
+</html>

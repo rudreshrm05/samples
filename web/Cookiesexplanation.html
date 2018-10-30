@@ -1,0 +1,20 @@
+Parameters ¶
+» RFC 6265 provides the normative reference on how each setcookie() parameter is interpreted.
+
+name
+The name of the cookie.
+
+value
+The value of the cookie. This value is stored on the clients computer; do not store sensitive information. Assuming the name is 'cookiename', 
+this value is retrieved through $_COOKIE['cookiename']
+
+expires
+The time the cookie expires. 
+This is a Unix timestamp so is in number of seconds since the epoch. 
+In other words, you'll most likely set this with the time() function plus the number of seconds before you want it to expire. 
+Or you might use mktime(). time()+60*60*24*30 will set the cookie to expire in 30 days. If set to 0, or omitted, 
+the cookie will expire at the end of the session (when the browser closes).
+
+
+Here's an example that uses setcookie() function to create a cookie named username and assign the value value John Carter to it. 
+It also specify that the cookie will expire after 30 days (30 days * 24 hours * 60 min * 60 sec).

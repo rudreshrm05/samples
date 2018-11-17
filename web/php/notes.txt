@@ -1,0 +1,319 @@
+following are some rules that must be followed while using the variables
+1. The variables must start with letter or _ but it shuld not begin with a num.
+2. It consists of alpha numeric chars or _.
+3. There should not be space in the name of the variable.
+4. while assigning the values to the variable the variable must start with $.
+	
+	ex: $marks=100;
+	
+Displaying messages on web page:
+
+In php the op can be displayed using two statements-
+
+1. print 
+2. echo
+
+using the unset() we can create gaps in the PHP array.
+we can use array_values() to adjust these gaps by subsequent element.
+print_r() can be used to display the array elements.
+
+Array sorting:
+
+sorting is processs in which the elements of the array can be sorted in some
+specific order.
+there are 2 types of ordering which are follwed in sorting
+1. Ascending
+2. Descending
+
+PHP uses sort() for sorting array elements.
+
+asort() sorts the array by values, but the original keys are kept.
+
+ksort() sorts the array by keys, but each value's original key is retained.
+
+Super global arrays:
+ The super global arrays are special predefined vars in PHP. These vars
+ allow th eprogammer to easily access http headers, query string paramaters.
+
+$_GET and $_POST
+
+create  a form containing information serial num, title of the book,
+pubilshers, quantiyy, price. Read the data from the form and display it using php script.  
+
+Write a php pgm to accept a +ve integer n through an html form and to display the
+sum of all nums from 1-n.
+
+Date object:
+
+used to obtain the date and time
+
+String object:
+
+String is a collection of chars.
+In JS using String obj many useful string related functionalities can be
+performed.
+
+EX;
+
+Object creation and modification:
+ The web designer can create an object and can set its properties as per
+gis requirement.
+The obj can be  created using the new keyword.
+The obj with no prop can be set using the foll statements:
+
+Myobj=new object();
+
+Then using the . operator we can set the properties for that obj.
+The obj can then be modified by assigning the values to this obj.
+
+EX:
+
+Event types:
+ EX on event handling.
+1. Handling events from <body>
+
+The onload event gets activated as soon as the web page gets loaded in the 
+browser's window.
+The following scripts illustrates the onload tag attribute.
+
+2. Handling events from button elements.
+
+JS to validate a form consisting of user name, age, hobby, gender, address, Email
+(checkbox),country(dropdown box)
+
+$_FILES
+
+is an associated array updated.......
+
+the input type="file"
+
+element is used to create the user interface for uploading a file from the client to 
+the server.
+
+HTML required for file upload:
+following stepa are req to upload a file
+
+1. Make use of HTTP POST() as transmitting a file through URL.
+2. Add the enctype="multipart/form-data" attr to the heml form ie performing the uload so that
+ the http req can submit multiple pcs of data.
+3. Finally include input type="file".
+
+
+1.A web app consists of series of disconnected http req to web server where each req for server page is basically
+a req to run a seperate pgm 
+2. There many occations where we want the web server to connect the req together for instance in an application like
+online purchasing sys, the user adds an item to the cart, makes online payment and then checks out.
+In this situation the web server should recognize that the req is from the same individual and these 
+are alltogether th subsequent req to perform the single task of online purchase.
+3. These req are made by usig http protocol. The drawback of this protocol is that it cannot recognize 
+that req that are coming to the web server are from single src or from two diff srcs. Hence http is 
+also called as stateless protocol. It cannot remember from which user the req has come from.
+To overcome this drawback of http there are variety of solns. Out of which the most commanly used tech of 
+passing info from one req to another to another are
+1. using query string 
+2. using URL path
+3. cookies
+4. session handling
+
+PASSING INFORMATION VIA QUERY String
+
+There are two methods
+1. GET 
+2. POST
+FOr passing the query string from browser to server.
+Method get is used to send the query which is less secure.
+Method post is used to send most secure data.
+
+Working of GET and POST:
+
+If we have a input form on which there are some textboxes placed, the user fills up the
+information whithin the text boxes and clicks the submit button.
+The information within the text boxes will then be transmitted to the server, via query string
+
+Difference between get and post
+
+GET																POST
+1.Parameters remain in browser history          1.Parameters are not saved in the browser history
+because they are part of the URL.
+2. GET is less secured compared to POST         2. POST is little safer than GET, because 
+because data sent is part of URL.                parameters are not stored in browser historyory
+SO, It is saved in browser history.
+3. this request can be cached.                
+4. This request can be bookmarked               4.This request cant be bookmarked
+5. GET method should not be used while
+sending password or other sensitive info.       6. Used while sending sensitive info.
+6. Only limited amount of info sent using 
+get request
+7. MOre efficient.                              7.Less Efficient
+
+JQUERY foundation:
+
+Including jquery in your page
+1.Since the entire lib exists as an src JS file, importing jquery for use in our application
+is as easy as including a link to a file in the <head> of html page.
+2. There a number of ways to do this
+	a. We can download it from JQUERY site and load it into the page from the web server.
+	b. We can use a content delivery ntwrk(CDN) to supply it from its server.
+	
+	ex:
+	For google - easiest way to try JQUERY is to add this line 
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("h2").hide();
+    });
+});
+</script>
+</head>
+
+basically the jqury is written in the foll form:
+$(selector).action()
+
+The  $ denotes acces to the JQUERY.
+The action denotes the actions to be performed on selector elements.
+
+The load() loads data from the server and puts th returned data into the selected element.
+Syntax: load()
+$(selector).load()
+
+Basic selectors:
+1. Element selector
+
+Script explanation:
+In the above code, withi the ready() the JQ code is written.
+For the button element selector the action is click. This action invokes the <h2> and the actioN
+associated with the element is hide(), this means that when the user clicks the button 
+the text written within the <h2> will be hidden.
+
+2. ID selector
+
+The id can be associate with the html element.
+In the foll ex we have used <p> to which the id named 'test' is associated.
+On button click event the function is invoked to hide the sentence written using the <p>.
+To find the element with particular id write # and the name if the id.
+
+3. Class selector
+
+The class selector is also used to find the specific html element. The element is written
+along with class="classname" and to find this element write a . folowed by class name.
+
+4. * as a selector
+
+* means all. If we include selector as * then the corresponding will be associated with all 
+the html elements.
+
+5. The href selector
+
+[href]
+
+6. Contextual selector 
+
+To change the style the .css() function is used.
+syntax:
+
+$(selector).css({"css property name":"css property value"});
+
+Form selectors:
+
+The form html element is used to collect and transmit data, there are JQ selectors written
+espically for them.
+These selectors are listed below:
+
+$(:button)- selects all the buttons
+$(:reset)- selects all the reset buttons
+$(:submit)- selects all the submit buttons
+$(:checkbox) - selects all the CBs
+$(:radiobutton)- selects all the RBs
+
+JQ listeners:
+
+1. JQ allows the management of events.
+2. The $(document).ready() is used in JQ allows to execute a function when the document is fully
+loaded.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+following chenges th clor of simple TB and pwd check box on clicking button
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<form>
+username:
+<input type="text" name="user"><br/>
+password:
+<input type="password" name="password">
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</form>
+<script type="text/javascript">
+$(function(){
+	$("form").submit(function(){
+		$(":text").css("background-color","cyan");
+		$(":password").css("background-color","red");
+	});
+});
+</script>
+</body>
+</html>

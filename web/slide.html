@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".down").click(function(){
+       $("h3").slideDown();
+	});
+	$(".up").click(function(){
+		$("h3").slideUp();
+	});
+});
+</script>
+</head>
+<body>
+
+<p>First click slide down button and then click slide up button</p>
+
+<button class="down">slide down</button>
+<button class="up">slide up</button>
+
+<h3>This text is sliding up and down</h3>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".out").click(function(){
+        $("h3.normal").fadeOut();
+		$("h3.fast").fadeOut("fast");
+		$("h3.slow").fadeOut("slow");
+		$("h3.very-fast").fadeOut(50);
+		$("h3.very-slow").fadeOut(2000);
+	});
+	$(".in").click(function(){
+		$("h3.normal").fadeIn();
+		$("h3.fast").fadeIn("fast");
+		$("h3.slow").fadeIn("slow");
+		$("h3.very-fast").fadeIn(50);
+		$("h3.very-slow").fadeIn(2000);
+	});
+});
+</script>
+</head>
+<body>
+
+<p>First click fadeOut button and then click fadein button</p>
+
+<button class="out">fadeout</button>
+<button class="in">fadeIn</button>
+
+<h3 class="very-fast">Very fast speed</h3>
+<h3 class="normal">default speed</h3>
+<h3 class="fast">fast speed</h3>
+<h3 class="slow">slow speed</h3>
+<h3 class="very-slow">very slow speed</h3> 
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		function Function(){
+		var text=document.createTextNode("white");
+		var ele=document.getElementById("colors").childNodes[0];
+		ele.replaceChild(text,ele.childNodes[0]); 
+		}
+		</script>
+	</head>
+	<body>
+		<ul id="colors">
+		<li>red</li>
+		<li>blue</li>
+		<li>green</li>
+		<li>yellow</li>
+		<li>black</li>
+		</ul>
+		<button onclick="Function()">replace element</button>
+	</body>
+</html>
